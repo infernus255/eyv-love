@@ -1,12 +1,18 @@
 {
-  "name": "basket-2020",
+  "name": "eyv-love",
   "version": "1.0.0",
   "private": true,
+  "main": "index.js",
+  "homepage": "https://eyv-love.herokuapp.com/",
+  "author": "Eros Montevegna",
+  "license": "ISC",
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
     "list-react-files": "^0.2.0",
     "mdbreact": "^4.27.0",
     "prop-types": "^15.7.2",
@@ -22,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    " postinstall ": " npm run build "
   },
   "eslintConfig": {
     "extends": "react-app"
